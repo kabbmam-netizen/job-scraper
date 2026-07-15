@@ -1,0 +1,67 @@
+name: Daily Job Scrape
+
+on:
+  schedule:
+    # 22:00 UTC = 06:00 CST+8 next day (morning briefing)
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+    # Leave empty to run the daily subscription; enter a keyword to filter
+    # jobs by title/company/tags (on top of the config filters).
+    inputs:
+      search:
+        description: '关键词搜索（留空 = 每日订阅）'
+        required: false
+        default: ''
+
+permissions:
+  contents: write  # needed to push the digest commit back to the repo
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          SEARCH_INPUT: ${{ github.event.inputs.search }}
+        run: |
+          if [ -n "$SEARCH_INPUT" ]; then
+            python -m src.main --search "$SEARCH_INPUT"
+          else
+            python -m src.main
+          fi
+
+      - name: Commit digest
+        run: |
+          git config user.name "job-bot"
+          git config user.email "job-bot@users.noreply.github.com"
+          git add digests/
+          if git diff --staged --quiet; then
+            echo "No new digest to commit"
+            exit 0
+          fi
+          # Retry on push conflict (concurrent runs / scheduled overlap):
+          # rebase onto the latest remote and push again. Up to 3 attempts.
+          for attempt in 1 2 3; do
+            git commit -m "chore: daily job digest $(date -u +%Y-%m-%d)"
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push failed (attempt $attempt), rebasing on remote..."
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Failed to push after 3 attempts"
+          exit 1

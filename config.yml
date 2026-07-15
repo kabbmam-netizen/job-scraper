@@ -1,0 +1,40 @@
+# Job tracker configuration.
+#
+# Each source under `sources:` is a pluggable module (see src/sources/).
+# Add a source = add a module + a config block here. A failed source is
+# logged and skipped, it never breaks the whole run.
+
+# Global settings
+max_total_items: 50      # cap total jobs in the digest (after dedup)
+max_push_items: 15       # cap jobs pushed to WeChat (length limits)
+timezone_offset: 8       # hours from UTC, used to label the digest date
+
+# Filters applied to ALL sources in both subscription and search mode.
+# Leave lists empty to disable that filter. Keywords are case-insensitive
+# substring matches against title + company + tags.
+filters:
+  keyword_include: []        # keep only jobs mentioning any of these (e.g. ["Python", "Backend"])
+  keyword_exclude: []        # drop jobs mentioning any of these (e.g. ["Intern", "Junior"])
+  salary_min: 0               # drop jobs with salary_max below this (USD annual)
+
+sources:
+  # ---------- RemoteOK ----------
+  # https://remoteok.com/api - JSON. First element is metadata, skip it.
+  # Remote tech jobs worldwide.
+  remoteok:
+    enabled: true
+    max_results: 30          # newest first
+
+  # ---------- Remotive ----------
+  # https://remotive.com/api/remote-jobs - JSON dict with `jobs` array.
+  # Remote jobs across categories.
+  remotive:
+    enabled: true
+    max_results: 25          # newest first
+
+  # ---------- 4 Day Week ----------
+  # https://4dayweek.io/api - JSON dict with `jobs` array.
+  # Jobs offering a 4-day work week.
+  fourdayweek:
+    enabled: true
+    max_results: 25          # newest first
