@@ -1,18 +1,23 @@
 # 职位搜索「engineer」- 2026-07-17
 
-> 共找到 26 个匹配职位。
+> 共找到 27 个匹配职位。
 
-## 🗓️ 4 Day Week (2)
-
-- **[Senior Systems Engineer](https://4dayweek.io/job/senior-systems-engineer-at-nutanix-8dac5eb4)**
-  - Nutanix | Germany
-  - tags: Sales, Systems Engineer, Senior
-  - #### **Hungry, Humble, Honest, with Heart.** #### ****The Opportunity**** At Nutanix, we don’t just build software – we create freedom. We free IT teams from the complexity of rigid IT silos and enabl...
+## 🗓️ 4 Day Week (3)
 
 - **[Electrical Reliability Engineer](https://4dayweek.io/job/electrical-reliability-engineer-at-marathon-petroleum-d64e831b)**
   - Marathon Petroleum | Mandan, United States
   - tags: Engineering, Electrical Reliability Engineer, Mid-level
   - ## **An exciting career awaits you** At MPC, we’re committed to being a great place to work – one that welcomes new ideas, encourages diverse perspectives, develops our people, and fosters a collabora...
+
+- **[Senior Data Engineer](https://4dayweek.io/job/senior-data-engineer-at-experian-39a2ca00)**
+  - Experian | Sofia, Bulgaria
+  - tags: Data Science, Data Engineer, Senior
+  - #### Company Description Experian is a global data and technology company, powering opportunities for people and businesses around the world. We operate across a range of markets, from financial servi...
+
+- **[Senior Director, Customer Success & Solutions Engineering (EMEA)](https://4dayweek.io/job/senior-director-customer-success-and-solutions-engineering-emea-at-procore-9fd15ca8)**
+  - Procore | Dublin, Ireland
+  - tags: Customer Support, Director, Customer Success & Solutions Engineering, Executive
+  - We're looking for a **Senior Director, Customer Success & Solutions Engineering EMEA** to join Procore's regional team. In this role, you'll lead, scale, and inspire a team of accomplished individuals...
 
 
 ## 🌐 RemoteOK (8)
@@ -35,17 +40,17 @@
 - **[Medical Support Technician Scheduler Outpatient](https://remoteOK.com/remote-jobs/remote-medical-support-technician-scheduler-outpatient-yukon-kuskokwim-health-corporation-1134879)**
   - Yukon-Kuskokwim Health Corporation | Alaska, 
   - tags: design, marketing, exec, web dev, video, content writing, senior, photoshop, engineer, ecommerce
-  - Posted 4:45:51 PM. REMOTE* , AlaskaWe are working together to achieve excellent health. Come join us!Theâ¦See this and similar jobs on LinkedIn.Please mention the word **ADORINGLY** and tag RMTcyLjE4...
+  - Posted 4:45:51 PM. REMOTE* , AlaskaWe are working together to achieve excellent health. Come join us!Theâ¦See this and similar jobs on LinkedIn.Please mention the word **ADORINGLY** and tag RMTcyLjIw...
 
 - **[Purchase Order Administrator](https://remoteOK.com/remote-jobs/remote-purchase-order-administrator-hirewell-1134876)**
   - Hirewell | United States, 
   - tags: design, marketing, exec, web dev, video, content writing, senior, photoshop, engineer, ecommerce
-  - PO Specialist (Part-Time Contract)Remote | ET or CT Preferred A consumer products company isâ¦See this and similar jobs on LinkedIn.Please mention the word **IMAGINATIVE** and tag RMTcyLjE4NC4yNDcuNg...
+  - PO Specialist (Part-Time Contract)Remote | ET or CT Preferred A consumer products company isâ¦See this and similar jobs on LinkedIn.Please mention the word **IMAGINATIVE** and tag RMTcyLjIwMy4xOTYuMT...
 
 - **[Creative Strategist](https://remoteOK.com/remote-jobs/remote-creative-strategist-dreamlabs-1134875)**
   - DREAMLABS
   - tags: design, marketing, exec, web dev, video, content writing, senior, photoshop, engineer, ecommerce
-  - Role: Creative Strategist / Content CreatorLocation: RemoteHours: M-F, 40 hours per weekReports to:â¦See this and similar jobs on LinkedIn.Please mention the word **MASTERPIECE** and tag RMTcyLjE4NC4...
+  - Role: Creative Strategist / Content CreatorLocation: RemoteHours: M-F, 40 hours per weekReports to:â¦See this and similar jobs on LinkedIn.Please mention the word **MASTERPIECE** and tag RMTcyLjIwMy4...
 
 - **[National Account Manager](https://remoteOK.com/remote-jobs/remote-national-account-manager-future-beauty-brands-formerly-ppi-beauty-1134881)**
   - Future Beauty Brands (formerly PPI Beauty) | New York City Metropolitan Area
